@@ -6,11 +6,11 @@
 
 # For demo purposes, also downloads pre-trained probes on BERT-large.
 
-wget https://nlp.stanford.edu/~johnhew/public/en_ewt-ud-sample.tgz
+wget https://github.com/UniversalDependencies/UD_English-EWT
 wget https://nlp.stanford.edu/~johnhew/public/sp/bertlarge16-distance-probe.params
 wget https://nlp.stanford.edu/~johnhew/public/sp/bertlarge16-depth-probe.params
-tar xzvf en_ewt-ud-sample.tgz
+tar xzvf en_ewt-ud.tgz
 mkdir -p example/data
 mv en_ewt-ud-sample example/data
 mv bertlarge16-distance-probe.params bertlarge16-depth-probe.params example/data
-rm en_ewt-ud-sample.tgz
+rm en_ewt-ud.tgz
