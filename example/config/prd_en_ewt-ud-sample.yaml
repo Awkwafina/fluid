@@ -12,7 +12,7 @@ dataset:
      - extra_info
      - embeddings
   corpus:
-    root: https://github.com/UniversalDependencies/UD_English-EWT
+    root: https://github.com/UniversalDependencies/UD_English-EWT/blob/master/
     train_path: en_ewt-ud-train.conllu
     dev_path: en_ewt-ud-dev.conllu
     test_path: en_ewt-ud-test.conllu
