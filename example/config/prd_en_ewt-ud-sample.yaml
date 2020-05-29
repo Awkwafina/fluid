@@ -13,9 +13,9 @@ dataset:
      - embeddings
   corpus:
     root: https://github.com/UniversalDependencies/UD_English-EWT
-    train_path: https://github.com/UniversalDependencies/UD_English-EWT/blob/master/en_ewt-ud-train.conllu
-    dev_path: https://github.com/UniversalDependencies/UD_English-EWT/blob/master/en_ewt-ud-dev.conllu
-    test_path: https://github.com/UniversalDependencies/UD_English-EWT/blob/master/en_ewt-ud-test.conllu
+    train_path: en_ewt-ud-train.conllu
+    dev_path: en_ewt-ud-dev.conllu
+    test_path: en_ewt-ud-test.conllu
   embeddings:
     type: token #{token,subword}
     root: example/data/en_ewt-ud-sample/ 
