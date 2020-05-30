@@ -12,7 +12,7 @@ dataset:
      - extra_info
      - embeddings
   corpus:
-    root: https://github.com/UniversalDependencies/UD_English-EWT/blob/master/
+    root: example/data/
     train_path: en_ewt-ud-train.conllu
     dev_path: en_ewt-ud-dev.conllu
     test_path: en_ewt-ud-test.conllu
@@ -24,11 +24,11 @@ dataset:
     test_path: en_ewt-ud-test.elmo-layers.hdf5
   batch_size: 40
 model:
-  hidden_dim: 1024 # ELMo hidden dim
+  hidden_dim: 768 # ELMo hidden dim
   #embedding_dim: 1024 # ELMo word embedding dim
-  model_type: ELMo-disk # BERT-disk, ELMo-disk, 
+  model_type: BERT-disk # BERT-disk, ELMo-disk, 
   use_disk: True
-  model_layer: 2 # BERT-base: {1,...,12}; ELMo: {1,2,3}
+  model_layer: 10 # BERT-base: {1,...,12}; ELMo: {1,2,3}
 probe:
   task_signature: word_pair # word, word_pair
   task_name: parse-distance
