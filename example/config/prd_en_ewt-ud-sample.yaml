@@ -1,7 +1,15 @@
 dataset:
   observation_fieldnames:
-     - index
-     - sentence
+     - ID
+     - FORM
+     - LEMMA
+     - UPOS
+     - XPOS
+     - FEATS
+     - HEAD
+     - DEPREL
+     - DEPS
+     - MISC
   corpus:
     root: example/data/
     train_path: en_ewt-ud-train.conllu
