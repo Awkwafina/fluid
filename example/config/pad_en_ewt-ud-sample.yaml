@@ -16,26 +16,19 @@ dataset:
     train_path: en_ewt-ud-train.conllu
     dev_path: en_ewt-ud-dev.conllu
     test_path: en_ewt-ud-test.conllu
-  embeddings:
-    type: token #{token,subword}
-    root: example/data/en_ewt-ud-sample/ 
-    train_path: en_ewt-ud-train.elmo-layers.hdf5
-    dev_path: en_ewt-ud-dev.elmo-layers.hdf5
-    test_path: en_ewt-ud-test.elmo-layers.hdf5
   batch_size: 1
 model:
-  hidden_dim: 768 # ELMo hidden dim
-  #embedding_dim: 1024 # ELMo word embedding dim
+  hidden_dim: 1024 # hidden dim
   model_type: BERT-disk # BERT-disk, ELMo-disk, 
-  use_disk: True
-  model_layer: 10 # BERT-base: {1,...,12}; ELMo: {1,2,3}
+  use_disk: False
+  model_layer: 16 # BERT-base: {1,...,12}; ELMo: {1,2,3}
 probe:
   task_signature: word # word, word_pair
   task_name: parse-depth
-  maximum_rank: 128
+  maximum_rank: 1024
   psd_parameters: True
-  diagonal: False
-  params_path: predictor.params
+  depth_params_path: example/data/bertlarge16-depth-probe.params
+  distance_params_path: example/data/bertlarge16-distance-probe.params
 probe_training:
   epochs: 30
   loss: L1
