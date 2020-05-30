@@ -10,6 +10,7 @@ dataset:
      - DEPREL
      - DEPS
      - MISC
+     - embeddings
   corpus:
     root: example/data/
     train_path: en_ewt-ud-train.conllu
