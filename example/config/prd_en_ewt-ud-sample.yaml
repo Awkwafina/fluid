@@ -2,15 +2,6 @@ dataset:
   observation_fieldnames:
      - index
      - sentence
-     - lemma_sentence
-     - upos_sentence
-     - xpos_sentence
-     - morph
-     - head_indices
-     - governance_relations
-     - secondary_relations
-     - extra_info
-     - embeddings
   corpus:
     root: example/data/
     train_path: en_ewt-ud-train.conllu
