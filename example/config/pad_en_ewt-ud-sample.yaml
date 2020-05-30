@@ -1,15 +1,15 @@
 dataset:
   observation_fieldnames:
-     - index
-     - sentence
-     - lemma_sentence
-     - upos_sentence
-     - xpos_sentence
-     - morph
-     - head_indices
-     - governance_relations
-     - secondary_relations
-     - extra_info
+     - ID
+     - FORM
+     - LEMMA
+     - UPOS
+     - XPOS
+     - FEATS
+     - HEAD
+     - DEPREL
+     - DEPS
+     - MISC
      - embeddings
   corpus:
     root: example/data/
